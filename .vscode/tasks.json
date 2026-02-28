@@ -3,19 +3,19 @@
     {
       "type": "cppbuild",
       "label": "C/C++: gcc.exe build active file",
-      "command": "D:/dev/tools/msys64/ucrt64/bin/gcc.exe",
+      "command": "C:/msys64/ucrt64/bin/gcc.exe",
       "args": [
         "-fdiagnostics-color=always",
         "-g",
         "${file}",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe",
-        "-Id:/dev/compvis/libs/SDL3/include",
-        "-Ld:/dev/compvis/libs/SDL3/lib",
+        "-IC:/Computacao visual/SDL3/include",
+        "-LC:/Computacao visual/SDL3/lib",
         "-lSDL3"
       ],
       "options": {
-        "cwd": "D:/dev/tools/msys64/ucrt64/bin"
+        "cwd": "C:/msys64/ucrt64/bin"
       },
       "problemMatcher": [
         "$gcc"
@@ -37,7 +37,7 @@
       "args": [
         "/c",
         "copy",
-        "d:\\dev\\compvis\\libs\\SDL3\\bin\\SDL3.dll",
+        "C:\\Computacao visual\\SDL3\\bin\\SDL3.dll",
         "${fileDirname}"
       ]
     }
