@@ -75,6 +75,10 @@ int main(int argc, char *argv[])
     .h = texJpg ? texJpg->h : 0.0f,
   };
 
+  jpgRect.x = (WINDOW_WIDTH - (int)jpgRect.x) / 2;
+  jpgRect.y = (WINDOW_HEIGHT - (int)jpgRect.y) >> 1;
+
+
   SDL_Texture *texPng = IMG_LoadTexture(renderer, IMAGE_TEST_PNG);
   if (!texPng)
   {
@@ -82,6 +86,9 @@ int main(int argc, char *argv[])
   }
   SDL_FRect pngRect = { .x = jpgRect.x + jpgRect.w, .y = 0.0f };
   SDL_GetTextureSize(texPng, &pngRect.w, &pngRect.h);
+
+  pngRect.x = WINDOW_WIDTH - (int)pngRect.w;
+  //pngRect.y = WINDOW_HEIGHT - (int)pngRect.y;
 
   SDL_Event event;
   bool isRunning = true;

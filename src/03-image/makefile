@@ -3,9 +3,9 @@ TARGET = main
 
 # Atualizar SDL_DIR com o local onde SDL3 esta instalado.
 # Uso da barra '\\' especifico para Windows.
-SDL_DIR = C:\\ComputacaoVisual\\SDL3
-SDL_INC_DIR = $(SDL_DIR)\\include
-SDL_LIB_DIR = $(SDL_DIR)\\lib
+SDL_DIR = C:\\ComputacaoVisual\\libs\\SDL3
+SDL_INC_DIR = $(SDL_DIR)\\include 
+SDL_LIB_DIR = $(SDL_DIR)\\lib 
 SDL_DLL_DIR = $(SDL_DIR)\\bin
 SDL_DLL_FILE = SDL3.dll
 SDL_IMAGE_DLL_FILE = SDL3_image.dll
